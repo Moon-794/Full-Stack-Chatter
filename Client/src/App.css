@@ -1,0 +1,108 @@
+.main-container
+{
+    min-width: 400px;
+    min-height: 600px;
+    width: 30%;
+    height: 60%;
+
+    background-color: rgb(67, 68, 75);
+
+
+}
+
+body, html
+{
+    width: 100%;
+    height: 100%;
+
+    margin-top: 1rem;
+
+    background-color: rgb(67, 68, 75);
+}
+
+h1
+{
+    color: rgb(82, 82, 82);
+    font-family: Calibri;
+}
+
+#root
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header
+{
+    width: 100%;
+    height: 10%;
+
+    background-color: #bcd0fd;
+    border-radius: 20px 20px 0 0;
+
+    border-bottom: 4px solid rgb(122, 122, 122);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-panel
+{
+    width: 100%;
+    height: 10%;
+
+    background-color: rgb(184, 184, 184);
+
+    border-radius: 0 0 20px 20px;
+}
+
+.input-panel, .message-list, .header
+{
+    box-shadow: -15px 15px 2px rgb(49, 48, 51);
+}
+
+.message-list
+{
+    width: 100%;
+    height: 80%;
+
+    background-color: rgb(238, 238, 238);
+    border-bottom: 4px solid rgb(122, 122, 122);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    padding: 10px 0px 0px 0px;
+    overflow-y: scroll;
+}
+
+.message
+{
+    height: 4rem;
+    width: 95%;
+
+    background-color: rgb(225, 232, 248);
+    border-bottom: 3px solid rgb(185, 185, 185);
+    border-radius: 25px;
+
+    margin-bottom: 5px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.message:nth-of-type(odd)
+{
+    background-color: rgb(214, 217, 224);
+}
+
+.message-p 
+{
+    padding: none;
+    margin: 0 10px 0 10px;
+    font-family: Calibri;
+}
