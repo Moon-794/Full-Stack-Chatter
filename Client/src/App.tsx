@@ -1,4 +1,3 @@
-import sendimg from '../public/send.png'
 import "./App.css";
 
 function Message()
@@ -13,34 +12,25 @@ function Message()
 
 function App() 
 {
+  let messageList = [];
+  for(var i = 0; i < 15; i++)
+  {
+    messageList.push(<Message/>);
+  }
+
   return (
       <div className="main-container">
         <div className="header">
           <h1>Full Stack Chatter</h1>
         </div>
         <div className="message-list">
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
-          <Message />
+          {messageList}
         </div>
         <div className="input-panel">
           <form action="api/msg" method="post">
             <input type="text" name="messageInput" id="messageInput" />
             <button type="submit" value="" id="submit"/>
           </form>
-          <img src={sendimg} alt="yo wtf" />
         </div>
       </div>
   )
