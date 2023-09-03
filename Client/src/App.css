@@ -153,10 +153,16 @@ button
     border-radius: 12px;
     background-color: #ffffff;
     border: none;
+    transition: background-color 300ms;
 }
 
 .submit > p
 {
     margin: none;
     padding: none;
+}
+
+button:hover
+{
+    background-color: #818181;
 }
